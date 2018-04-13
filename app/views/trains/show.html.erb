@@ -2,7 +2,12 @@
 
 <p>
   <strong>Number:</strong>
-  <%= @train.number %>
+  <%= @train.number %><br/>
+  <% if @train.route %>
+    <strong>Маршрут:</strong> <%= @train.route.name %>
+  <% else %>
+    Маршрут не назначен
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_train_path(@train) %> |
