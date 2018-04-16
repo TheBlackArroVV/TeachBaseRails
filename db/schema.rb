@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180416122110) do
+ActiveRecord::Schema.define(version: 20180416144848) do
 
   create_table "carriages", force: :cascade do |t|
     t.string "type"
@@ -53,6 +53,8 @@ ActiveRecord::Schema.define(version: 20180416122110) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "initials"
+    t.string "passport_data"
   end
 
   create_table "trains", force: :cascade do |t|

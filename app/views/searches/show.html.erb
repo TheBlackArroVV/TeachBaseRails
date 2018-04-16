@@ -12,19 +12,19 @@
       <p>
        <strong>Train number:</strong>
        <%= train.number %>
-      </p>
-     <% end %>
       <p>
-       <strong>Arrival time:</strong>
-       <%= el.arrival_time %>
+        <strong>Arrival time:</strong>
+        <%= el.arrival_time %>
       </p>
       <p>
-       <strong>Departure time:</strong>
-       <%=  el.departure_time %>
+        <strong>Departure time:</strong>
+        <%= el.departure_time %>
       </p>
       <p>
         <strong>Buy a ticket:</strong>
-        <%= link_to 'Buy a ticket', new_user_ticket_path(@user) %>
+        <%= link_to 'Buy a ticket', new_user_ticket_path(@user, train.id) %>
       </p>
+      </p>
+     <% end %>
   <% end %>
 <% end %>

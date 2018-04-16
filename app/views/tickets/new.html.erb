@@ -1,5 +1,14 @@
 <h1>Tickets:</h1>
-<%= form_for [@user, @ticket], url: new_user_ticket_path do |f| %>
+<%= form_for [@user, @ticket], url: user_tickets_path do |f| %>
   <div class="container">
+    <%= f.label :initials %>
+    <%= f.text_field :initials %>
   </div>
+
+  <div class="containter">
+    <%= f.label :passport_data %>
+    <%= f.text_field :passport_data %>
+  </div>
+
+  <%= f.submit 'Buy' %>
 <% end %>
