@@ -45,6 +45,6 @@ class CarriagesController < ApplicationController
   end
 
   def carriage_params
-    params.require(:carriage).permit(:type_of_carriage, :top_places, :bottom_places, :train_id)
+    params.require(:carriage).permit(:type, :top_places, :bottom_places, :train_id)
   end
 end
