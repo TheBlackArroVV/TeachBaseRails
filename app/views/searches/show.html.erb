@@ -6,25 +6,13 @@
   <%= submit_tag 'Find' %>
 <% end %>
 
-<% if @time.present? %>
-  <% @time.each do |el| %>
-    <% el.route.trains.each do |train| %>
-      <p>
-       <strong>Train number:</strong>
-       <%= train.number %>
-      <p>
-        <strong>Arrival time:</strong>
-        <%= el.arrival_time %>
-      </p>
-      <p>
-        <strong>Departure time:</strong>
-        <%= el.departure_time %>
-      </p>
-      <p>
-        <strong>Buy a ticket:</strong>
-        <%= link_to 'Buy a ticket', new_user_ticket_path(@user, train.id) %>
-      </p>
-      </p>
-     <% end %>
+<strong>Available trains:</strong>
+
+<% if @trains %>
+  <% @trains.each do |train| %>
+    <strong>Train number: </strong><%= train.number %><br/>
+    <strong>Departure: </strong><%= train.route.railway_stations_routes.first.departure_time %><br/>
+    <strong>Arrival: </strong><%= train.route.railway_stations_routes.last.arrival_time %><br/>
+    <%= link_to 'Buy a ticket', new_ticket_path(id: train.id) %><br/>
   <% end %>
 <% end %>
