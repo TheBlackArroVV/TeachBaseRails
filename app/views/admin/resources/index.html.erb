@@ -1,9 +1,9 @@
-<h1>All Resources:</h1>
-<strong>Routes: </strong>
-<%= link_to 'routes', admin_routes_path %><br/>
-<strong>Trains: </strong>
-<%= link_to 'trains', admin_trains_path %><br/>
-<strong>RailwayStations: </strong>
-<%= link_to 'stations', admin_railway_stations_path %><br/>
-<strong>Tickets: </strong>
-<%= link_to 'tickets', admin_tickets_path %>
+<h1><%= t('common.resources') %>:</h1>
+<strong><%= t('common.routes') %>: </strong>
+<%= link_to t('common.routes'), admin_routes_path %><br/>
+<strong><%= t('common.trains') %>: </strong>
+<%= link_to t('common.trains'), admin_trains_path %><br/>
+<strong><%= t('common.stations') %>: </strong>
+<%= link_to t('common.stations'), admin_railway_stations_path %><br/>
+<strong><%= t('common.tickets') %>: </strong>
+<%= link_to t('common.tickets'), admin_tickets_path %>

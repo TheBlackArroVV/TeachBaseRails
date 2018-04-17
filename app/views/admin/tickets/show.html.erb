@@ -1,6 +1,6 @@
-<strong>Ticket in train number: </strong><%= @ticket.train.number %><br/>
-<strong>Buyed by user: </strong><%= @ticket.user.name %><br/>
-<strong>For: </strong><%= @ticket.passport_data %><br/>
-<strong>With initials: </strong><%= @ticket.initials %><br/>
-<%= link_to 'Edit a ticket', edit_admin_ticket_path(@ticket) %>
-<%= link_to 'Delete a ticket', admin_ticket_path(@ticket), method: :delete %>
+<strong><%= t('.ticket_in_train') %> </strong><%= @ticket.train.number %><br/>
+<strong><%= t('.buyer_of_ticket') %> </strong><%= @ticket.user.name %><br/>
+<strong><%= t('.for') %> </strong><%= @ticket.passport_data %><br/>
+<strong><%= t('.initials') %> </strong><%= @ticket.initials %><br/>
+<%= link_to t('.edit'), edit_admin_ticket_path(@ticket) %>
+<%= link_to t('.delete'), admin_ticket_path(@ticket), method: :delete %>

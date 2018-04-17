@@ -1,0 +1,31 @@
+ru:
+  admin:
+    routes:
+      new:
+        new_route: 'Новый маршрут'
+        stations: 'Станции'
+        route: 'Маршрут'
+      form:
+        submit: '%{action} станцию'
+        stations: 'Станции'
+        route: 'Маршрут'
+    tickets:
+      show:
+        ticket_in_train: 'Билет в поезде'
+        buyer_of_ticket: 'Покупатель билета'
+        for: 'Куплен для'
+        initials: 'Инициалы'
+        edit: 'Редактировать билет'
+        delete: 'Удалить билет'
+      new:
+        initials: 'Инициалы'
+  common:
+    back: 'Назад'
+    exit: 'Выход'
+    admin: 'Админпанель'
+    login: 'Логин'
+    trains: 'Поезда'
+    tickets: 'Билеты'
+    routes: 'Маршруты'
+    stations: 'Станции'
+    resources: 'Ресурсы'
