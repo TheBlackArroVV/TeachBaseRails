@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @train.number %><br/>
+  <% if @train.route %>
+    <strong>Маршрут:</strong> <%= @train.route.name %>
+  <% else %>
+    Маршрут не назначен
+  <% end %>
+</p>
+
+<% if @train.from_head %>
+  <% @train.carriages.each do |carriage| %>
+    <%= link_to carriage.number, admin_carriage_path(carriage) %><br/>
+  <% end %>
+<% else %>
+  <% @train.carriages.reverse.each do |carriage| %>
+    <%= link_to carriage.number, admin_carriage_path(carriage) %><br/>
+  <% end %>
+<% end %>
+
+<%= link_to 'Add a carriage', new_admin_train_carriage_path(@train) %> |
+<%= link_to 'Edit', edit_admin_train_path(@train) %> |
+<%= link_to 'Back', admin_trains_path %>
