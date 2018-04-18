@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26084a78-076e-4b3e-abca-d5e867f75bc6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/trains_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trains_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/railway_stations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/railway_stations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/routes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/routes_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/resources/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/resources/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/routes/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/routes/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/routes/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/routes/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/tickets/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/tickets/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/tickets_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tickets_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/carriage.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/carriage.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/ticket.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/ticket.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tickets/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tickets/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -32,7 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/trains_app@Development__trains_app.rcov" NAME="Development: trains_app Coverage Results" MODIFIED="1523976916262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="trains_app" />
+    <SUITE FILE_PATH="coverage/trains_app@Development__trains_app.rcov" NAME="Development: trains_app Coverage Results" MODIFIED="1524041045934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="trains_app" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -71,114 +62,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/routes/_form.html.erb">
+      <file leaf-file-name="ticket.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#596#660#1#ruby" expanded="true" />
-              </folding>
+            <state relative-caret-position="300">
+              <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/resources/index.html.erb">
+      <file leaf-file-name="tickets_mailer.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/mailers/tickets_mailer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete_ticket.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/tickets_mailer/delete_ticket.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
-              <folding>
-                <element signature="n#t#0;n#!!top" expanded="true" />
-                <element signature="e#74#92#0#ruby" expanded="true" />
-                <element signature="n#t#1;n#!!top" expanded="true" />
-                <element signature="e#158#176#0#ruby" expanded="true" />
-                <element signature="n#t#2;n#!!top" expanded="true" />
-                <element signature="e#251#271#0#ruby" expanded="true" />
-                <element signature="n#t#3;n#!!top" expanded="true" />
-                <element signature="e#348#367#0#ruby" expanded="true" />
-              </folding>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/routes/new.html.erb">
+      <file leaf-file-name="buy_ticket.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/tickets_mailer/buy_ticket.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
-              <folding>
-                <element signature="e#69#85#0#ruby" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/tickets/new.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/tickets/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="120">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ru.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/locales/ru.yml">
+      <file leaf-file-name="tickets_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/tickets_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/routes_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/admin/routes_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="railway_stations_controller.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/admin/railway_stations_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/tickets/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding>
-                <element signature="n#t#0;n#!!top" expanded="true" />
-                <element signature="n#t#1;n#!!top" expanded="true" />
-                <element signature="n#t#2;n#!!top" expanded="true" />
-                <element signature="n#t#3;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activerecord.ru.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/locales/activerecord.ru.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="345">
+              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -193,21 +126,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>$PROJECT_DIR$/app/views/tickets_mailer</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/searches/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tickets/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/admin/carriages/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/admin/carriages/_carriage.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/admin/routes/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/admin/routes/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/admin/routes/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/admin/carriages/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/admin/carriages/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/carriages/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/railway_stations/_railway_station.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/railway_stations/edit.html.erb" />
@@ -221,11 +150,9 @@
         <option value="$PROJECT_DIR$/app/controllers/admin/base_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/carriages_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/trains_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/tickets_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/tickets/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tickets/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/tickets/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tickets/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/tickets_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/resources_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/trains/_train.html.erb" />
@@ -250,6 +177,17 @@
         <option value="$PROJECT_DIR$/app/controllers/routes_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/routes_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/railway_stations_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20180418080453_add_index_to_trains.rb" />
+        <option value="$PROJECT_DIR$/app/models/carriage.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20180418080858_add_indexes_to_carriages.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20180418083704_add_indexes_to_railway_stations_routes.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20180418083838_add_indexes_to_tickets.rb" />
+        <option value="$PROJECT_DIR$/app/views/tickets_mailer/buy_ticket.html.erb" />
+        <option value="$PROJECT_DIR$/app/mailers/tickets_mailer.rb" />
+        <option value="$PROJECT_DIR$/app/models/ticket.rb" />
+        <option value="$PROJECT_DIR$/app/views/tickets_mailer/delete_ticket.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/tickets_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/tickets/index.html.erb" />
       </list>
     </option>
   </component>
@@ -285,8 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,52 +245,19 @@
               <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="trains_app" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="mailers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="trains_app" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="tickets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
@@ -366,18 +269,16 @@
             <path>
               <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="locales" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tickets_mailer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -519,12 +420,13 @@
       <workItem from="1523863071189" duration="6937000" />
       <workItem from="1523871289759" duration="18941000" />
       <workItem from="1523892943938" duration="15000" />
-      <workItem from="1523952789445" duration="21503000" />
+      <workItem from="1523952789445" duration="23612000" />
+      <workItem from="1524036254086" duration="3039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47396000" />
+    <option name="totallyTimeSpent" value="52544000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,7 +447,7 @@
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32959184" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49946752" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32959184" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18636848" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18796591" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.32960597" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32959184" />
@@ -568,58 +470,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/admin/railway_stations/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/railway_stations/_railway_station.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/railway_stations/_railway_station.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/railway_stations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/railway_stations/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/railway_stations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/railway_stations/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/trains/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/trains/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -659,13 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-195">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tickets_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" selection-start-line="40" selection-end-line="43" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -710,9 +553,6 @@
           <caret line="4" column="45" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="45" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/trains/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -770,9 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -801,16 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tickets/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -824,9 +651,6 @@
           <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/routes/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -842,10 +666,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/activerecord.ru.yml">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/routes/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -853,26 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="27" selection-start-column="27" selection-end-column="27" />
-          <folding>
-            <element signature="n#t#0;n#!!top" expanded="true" />
-            <element signature="e#74#92#0#ruby" expanded="true" />
-            <element signature="n#t#1;n#!!top" expanded="true" />
-            <element signature="e#158#176#0#ruby" expanded="true" />
-            <element signature="n#t#2;n#!!top" expanded="true" />
-            <element signature="e#251#271#0#ruby" expanded="true" />
-            <element signature="n#t#3;n#!!top" expanded="true" />
-            <element signature="e#348#367#0#ruby" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/routes/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#596#660#1#ruby" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,22 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="21" selection-start-column="21" selection-end-column="21" />
-          <folding>
-            <element signature="e#69#85#0#ruby" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/tickets/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <element signature="n#t#0;n#!!top" expanded="true" />
-            <element signature="n#t#1;n#!!top" expanded="true" />
-            <element signature="n#t#2;n#!!top" expanded="true" />
-            <element signature="n#t#3;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -915,15 +703,121 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/routes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
+        <state relative-caret-position="225">
           <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/railway_stations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
+        <state relative-caret-position="615">
           <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/tickets/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/activerecord.ru.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180418080453_add_index_to_trains.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/carriage.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/train.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/application_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180418080858_add_indexes_to_carriages.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180418083704_add_indexes_to_railway_stations_routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180418083838_add_indexes_to_tickets.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-938" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/tickets_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tickets_mailer/delete_ticket.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tickets_mailer/buy_ticket.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tickets_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tickets/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>

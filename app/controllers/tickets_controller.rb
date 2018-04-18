@@ -30,7 +30,7 @@ class TicketsController < ApplicationController
 
   def destroy
     @ticket.destroy
-    redirect_to 'index'
+    render 'index'
   end
 
   private
