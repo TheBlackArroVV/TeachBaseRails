@@ -13,7 +13,7 @@ class Admin::CarriagesController < Admin::BaseController
     @carriage = Carriage.new(carriage_params)
 
     if @carriage.save
-      redirect_to @carriage
+      redirect_to admin_train_carriages_path(@carriage)
     else
       render 'new'
     end
@@ -45,6 +45,6 @@ class Admin::CarriagesController < Admin::BaseController
   end
 
   def carriage_params
-    params.require(:carriage).permit(:type, :top_places, :bottom_places, :train_id)
+    params.require(:carriage).permit(:type, :top_places, :bottom_places, :side_bottom_places, :side_top_places, :seating_places ,:train_id)
   end
 end

@@ -1,4 +1,4 @@
-<%= form_for @route, url: admin_routes_path  do |form| %>
+<%= form_for route, url: admin_route_path(route.id), html: { style: "display: #{hidden ? 'none' : 'block'}" }  do |form| %>
   <% if route.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(route.errors.count, "error") %> prohibited this route from being saved:</h2>

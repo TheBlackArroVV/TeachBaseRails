@@ -1,4 +1,6 @@
 class Carriage < ApplicationRecord
+  TYPES = ['CoupeCarriage', 'EconomyCarriage', 'SeatingCarriage', 'SVCarriage']
+
   belongs_to :train
 
   validates :number, uniqueness: { scope: :train_id }

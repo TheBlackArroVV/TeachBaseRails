@@ -24,7 +24,7 @@ class Admin::RoutesController < Admin::BaseController
 
   def update
     @route.update(route_params)
-    redirect_to routes_path
+    redirect_to admin_routes_path
   end
 
   def destroy

@@ -28,28 +28,18 @@ class Admin::TrainsController < Admin::BaseController
   def create
     @train = Train.new(train_params)
 
-    respond_to do |format|
-      if @train.save
+    if @train.save
         format.html { redirect_to @train, notice: 'Train was successfully created.' }
-        format.json { render :show, status: :created, location: @train }
-      else
+    else
         format.html { render :new }
-        format.json { render json: @train.errors, status: :unprocessable_entity }
-      end
     end
   end
 
-  # PATCH/PUT /trains/1
-  # PATCH/PUT /trains/1.json
   def update
-    respond_to do |format|
-      if @train.update(train_params)
-        format.html { redirect_to @train, notice: 'Train was successfully updated.' }
-        format.json { render :show, status: :ok, location: @train }
-      else
-        format.html { render :edit }
-        format.json { render json: @train.errors, status: :unprocessable_entity }
-      end
+    if @train.update(train_params)
+      redirect_to admin_trains_path
+    else
+      render 'edit'
     end
   end
 
