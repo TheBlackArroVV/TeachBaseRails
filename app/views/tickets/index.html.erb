@@ -1,9 +1,11 @@
-<% if @tickets %>
-  <% @tickets.each do |ticket| %>
-    <%= link_to ticket.id, ticket %>
-    <strong>Ticket in train number: </strong><%= ticket.train.number %><br/>
-    <strong>Buyed by user: </strong><%= ticket.user.name %><br/>
-    <strong>For: </strong><%= ticket.passport_data %><br/>
-    <strong>With initials: </strong><%= ticket.initials %><br/>
+<div class="row">
+  <% if @tickets %>
+    <% @tickets.each do |ticket| %>
+      <strong>Ticket in train number: </strong><%= ticket.train.number %><br/>
+      <strong>Buyed by user: </strong><%= ticket.user.name %><br/>
+      <strong>For: </strong><%= ticket.passport_data %><br/>
+      <strong>With initials: </strong><%= ticket.initials %><br/>
+      <%= link_to 'Ticket', ticket_path(ticket.id), class: 'btn btn-info' %><br/>
+    <% end %>
   <% end %>
-<% end %>
+</div>

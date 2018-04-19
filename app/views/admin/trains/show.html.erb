@@ -20,6 +20,6 @@
   <% end %>
 <% end %>
 
-<%= link_to 'Add a carriage', new_admin_train_carriage_path(@train) %> |
+<%= link_to 'Add a carriage', new_admin_train_carriage_path(@train), class: 'btn btn-primary' %> |
 <%= link_to 'Edit', edit_admin_train_path(@train) %> |
-<%= link_to 'Back', admin_trains_path %>
+<%= link_to 'Back', admin_trains_path, class: 'btn btn-secondary' %>

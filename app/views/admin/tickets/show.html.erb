@@ -3,4 +3,4 @@
 <strong><%= t('.for') %> </strong><%= @ticket.passport_data %><br/>
 <strong><%= t('.initials') %> </strong><%= @ticket.initials %><br/>
 <%= link_to t('.edit'), edit_admin_ticket_path(@ticket) %>
-<%= link_to t('.delete'), admin_ticket_path(@ticket), method: :delete %>
+<%= link_to t('.delete'), admin_ticket_path(@ticket), method: :delete, class: 'btn btn-danger' %>

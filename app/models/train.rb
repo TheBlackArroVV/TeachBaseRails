@@ -1,6 +1,6 @@
 class Train < ApplicationRecord
   has_many :tickets, dependent: :destroy
-  has_many :carriages
+  has_many :carriages, dependent: :destroy
   belongs_to :route
   belongs_to :current_station, class_name: 'RailwayStation', foreign_key: :current_station_id
 

@@ -1,18 +1,25 @@
-<h1>Find a ticket</h1>
+<div class="row">
 
-<%= form_tag search_path do %>
-  <%= collection_select :search, :arrival_station, RailwayStation.all, :name, :name %>
-  <%= collection_select :search, :departure_station, RailwayStation.all, :name, :name %>
-  <%= submit_tag 'Find' %>
-<% end %>
+  <div class="col-sm-3">
 
-<strong>Available trains:</strong>
+    <h1>Find a ticket</h1>
+
+    <%= form_tag search_path do %>
+      <%= collection_select :search, :arrival_station, RailwayStation.all, :name, :name, {}, { class: 'form-control form-control-sm' } %><br/>
+      <%= collection_select :search, :departure_station, RailwayStation.all, :name, :name, {}, { class: 'form-control form-control-sm' } %><br/>
+      <%= submit_tag 'Find', class: 'btn btn-success' %>
+    <% end %>
+
+  </div>
+
+</div>
 
 <% if @trains %>
+  <h1>Available trains:</h1><br/>
   <% @trains.each do |train| %>
     <strong>Train number: </strong><%= train.number %><br/>
     <strong>Departure: </strong><%= train.route.railway_stations_routes.first.departure_time %><br/>
     <strong>Arrival: </strong><%= train.route.railway_stations_routes.last.arrival_time %><br/>
-    <%= link_to 'Buy a ticket', new_ticket_path(id: train.id) %><br/>
+    <%= link_to '', new_ticket_path(id: train.id), class: 'glyphicon glyphicon-shopping-cart' %><br/>
   <% end %>
 <% end %>
