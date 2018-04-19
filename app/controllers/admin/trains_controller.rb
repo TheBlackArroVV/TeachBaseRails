@@ -29,9 +29,9 @@ class Admin::TrainsController < Admin::BaseController
     @train = Train.new(train_params)
 
     if @train.save
-        format.html { redirect_to @train, notice: 'Train was successfully created.' }
+      redirect_to admin_train_path(@train), notice: 'Train was successfully created.'
     else
-        format.html { render :new }
+      render 'new'
     end
   end
 
@@ -47,10 +47,7 @@ class Admin::TrainsController < Admin::BaseController
   # DELETE /trains/1.json
   def destroy
     @train.destroy
-    respond_to do |format|
-      format.html { redirect_to trains_url, notice: 'Train was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+      redirect_to admin_trains_path, notice: 'Train was successfully destroyed.'
   end
 
   private

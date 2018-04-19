@@ -35,7 +35,7 @@ class Admin::CarriagesController < Admin::BaseController
 
   def destroy
     @carriage.destroy
-    redirect_to carriages_url
+    redirect_to admin_trains_path
   end
 
   private
