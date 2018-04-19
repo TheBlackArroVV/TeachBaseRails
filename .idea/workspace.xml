@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26084a78-076e-4b3e-abca-d5e867f75bc6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/trains_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trains_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/trains.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/trains.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/carriages_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/carriages_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/routes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/routes_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/trains_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/trains_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/carriage.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/carriage.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/railway_station.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/railway_station.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/carriages/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/carriages/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/carriages/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/carriages/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/carriages/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/carriages/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/carriages/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/carriages/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/routes/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/routes/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/routes/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/routes/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/routes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/routes/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/trains/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/trains/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/trains/_train.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/trains/_train.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/trains/_train.json.jbuilder" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/trains/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/trains/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/trains/index.json.jbuilder" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/trains/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environment.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -81,61 +62,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/carriages/_form.html.erb">
+      <file leaf-file-name="environment.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
-              <folding>
-                <element signature="n#style#0;n#div#4;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carriages_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/admin/carriages_controller.rb">
+      <file leaf-file-name="application.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="397">
+              <caret line="82" selection-start-line="82" selection-end-line="82" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/carriages/index.html.erb">
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/carriages/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carriages.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/carriages.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/routes.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="232">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -165,7 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
@@ -191,10 +144,8 @@
         <option value="$PROJECT_DIR$/app/views/tickets_mailer/delete_ticket.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tickets_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/tickets/index.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/migrate/20180418083704_add_indexes_to_railway_stations_routes.rb" />
         <option value="$PROJECT_DIR$/app/models/railway_station.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/routes/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/routes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/routes/_form.html.erb" />
@@ -216,6 +167,9 @@
         <option value="$PROJECT_DIR$/app/controllers/admin/carriages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/carriages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/carriages/show.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/environment.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -251,6 +205,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,85 +216,18 @@
             <path>
               <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="carriages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trains_app" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trains_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="trains_app" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="initializers" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -488,7 +376,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64970000" />
+    <option name="totallyTimeSpent" value="65169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -503,26 +391,38 @@
     <frame x="-2" y="-18" width="1924" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18956336" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32959184" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50106496" side_tool="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5005325" side_tool="true" weight="0.32857144" />
+      <window_info anchor="right" id="Database" order="0" weight="0.32960597" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49893504" weight="0.32857144" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32959184" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18796591" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="0" weight="0.32960597" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49946752" weight="0.32857144" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.32959184" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18796591" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49893504" weight="0.32857144" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="0" weight="0.32960597" />
       <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50106496" side_tool="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32959184" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32959184" />
+      <window_info id="Favorites" order="0" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,6 +432,46 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180418083704_add_indexes_to_railway_stations_routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/carriages/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/carriages/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/carriages/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/resources/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -581,22 +521,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180418080453_add_index_to_trains.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180418080453_add_index_to_trains.rb" />
     <entry file="file://$PROJECT_DIR$/app/models/train.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/application_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180418080858_add_indexes_to_carriages.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -675,16 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="82" column="78" selection-start-line="82" selection-start-column="78" selection-end-line="82" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/railway_stations.coffee">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/tickets/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -713,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/routes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -740,9 +654,6 @@
           <caret line="8" column="39" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="39" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/trains/_train.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/routes/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -814,18 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/coupe_carriage.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/economy_carriage.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/sv_carriage.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/seating_carriage.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/carriages.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -863,6 +762,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
         </state>
       </provider>
     </entry>
