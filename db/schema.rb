@@ -10,86 +10,88 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_180_418_083_838) do
-  create_table 'carriages', force: :cascade do |t|
-    t.string 'type'
-    t.integer 'top_places'
-    t.integer 'bottom_places'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.integer 'train_id'
-    t.integer 'side_top_places'
-    t.integer 'side_bottom_places'
-    t.integer 'seating_places'
-    t.integer 'number'
-    t.index %w[id type], name: 'index_carriages_on_id_and_type'
-    t.index ['train_id'], name: 'index_carriages_on_train_id'
+ActiveRecord::Schema.define(version: 20180418083838) do
+
+  create_table "carriages", force: :cascade do |t|
+    t.string "type"
+    t.integer "top_places"
+    t.integer "bottom_places"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "train_id"
+    t.integer "side_top_places"
+    t.integer "side_bottom_places"
+    t.integer "seating_places"
+    t.integer "number"
+    t.index ["id", "type"], name: "index_carriages_on_id_and_type"
+    t.index ["train_id"], name: "index_carriages_on_train_id"
   end
 
-  create_table 'railway_stations', force: :cascade do |t|
-    t.string 'name'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+  create_table "railway_stations", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table 'railway_stations_routes', force: :cascade do |t|
-    t.integer 'railway_station_id'
-    t.integer 'route_id'
-    t.integer 'position'
-    t.datetime 'departure_time'
-    t.datetime 'arrival_time'
-    t.index ['route_id'], name: 'index_railway_stations_routes_on_route_id'
-    t.index [nil], name: 'index_railway_stations_routes_on_railwaystation_id'
+  create_table "railway_stations_routes", force: :cascade do |t|
+    t.integer "railway_station_id"
+    t.integer "route_id"
+    t.integer "position"
+    t.datetime "departure_time"
+    t.datetime "arrival_time"
+    t.index ["railway_station_id"], name: "index_railway_stations_routes_on_railway_station_id"
+    t.index ["route_id"], name: "index_railway_stations_routes_on_route_id"
   end
 
-  create_table 'routes', force: :cascade do |t|
-    t.string 'name'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+  create_table "routes", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table 'tickets', force: :cascade do |t|
-    t.integer 'train_id'
-    t.integer 'start_station_id'
-    t.integer 'finish_station_id'
-    t.integer 'user_id'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.string 'initials'
-    t.string 'passport_data'
-    t.index ['finish_station_id'], name: 'index_tickets_on_finish_station_id'
-    t.index ['start_station_id'], name: 'index_tickets_on_start_station_id'
-    t.index ['train_id'], name: 'index_tickets_on_train_id'
-    t.index ['user_id'], name: 'index_tickets_on_user_id'
+  create_table "tickets", force: :cascade do |t|
+    t.integer "train_id"
+    t.integer "start_station_id"
+    t.integer "finish_station_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "initials"
+    t.string "passport_data"
+    t.index ["finish_station_id"], name: "index_tickets_on_finish_station_id"
+    t.index ["start_station_id"], name: "index_tickets_on_start_station_id"
+    t.index ["train_id"], name: "index_tickets_on_train_id"
+    t.index ["user_id"], name: "index_tickets_on_user_id"
   end
 
-  create_table 'trains', force: :cascade do |t|
-    t.string 'number'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.integer 'route_id'
-    t.integer 'current_station_id'
-    t.boolean 'from_head', default: true
-    t.index ['current_station_id'], name: 'index_trains_on_current_station_id'
-    t.index ['route_id'], name: 'index_trains_on_route_id'
+  create_table "trains", force: :cascade do |t|
+    t.string "number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "route_id"
+    t.integer "current_station_id"
+    t.boolean "from_head", default: true
+    t.index ["current_station_id"], name: "index_trains_on_current_station_id"
+    t.index ["route_id"], name: "index_trains_on_route_id"
   end
 
-  create_table 'users', force: :cascade do |t|
-    t.string 'name'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.string 'email', default: '', null: false
-    t.string 'encrypted_password', default: '', null: false
-    t.string 'reset_password_token'
-    t.datetime 'reset_password_sent_at'
-    t.datetime 'remember_created_at'
-    t.string 'confirmation_token'
-    t.datetime 'confirmed_at'
-    t.datetime 'confirmation_sent_at'
-    t.string 'unconfirmed_email'
-    t.boolean 'admin', default: false
-    t.string 'surname'
-    t.index ['email'], name: 'index_users_on_email', unique: true
-    t.index ['reset_password_token'], name: 'index_users_on_reset_password_token', unique: true
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.string "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string "unconfirmed_email"
+    t.boolean "admin", default: false
+    t.string "surname"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
+
 end
