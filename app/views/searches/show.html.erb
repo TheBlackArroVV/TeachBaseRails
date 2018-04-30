@@ -14,7 +14,7 @@
 
 </div>
 
-<% if @trains %>
+<% if @trains && !@trains.empty? %>
   <h1><%= t('search.available_trains') %>:</h1><br/>
   <% @trains.each do |train| %>
     <strong><%= t('train.number') %>: </strong><%= train.number %><br/>
