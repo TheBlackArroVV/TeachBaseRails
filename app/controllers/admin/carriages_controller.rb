@@ -1,5 +1,5 @@
 class Admin::CarriagesController < Admin::BaseController
-  before_action :set_carriage, only: [:edit, :update, :show, :destroy]
+  before_action :set_carriage, only: %i[edit update show destroy]
 
   def index
     @carriages = Carriage.all
@@ -19,8 +19,7 @@ class Admin::CarriagesController < Admin::BaseController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @carriage.update(carriage_params)
@@ -30,8 +29,7 @@ class Admin::CarriagesController < Admin::BaseController
     end
   end
 
-  def show
-  end
+  def show; end
 
   def destroy
     @carriage.destroy
@@ -45,6 +43,6 @@ class Admin::CarriagesController < Admin::BaseController
   end
 
   def carriage_params
-    params.require(:carriage).permit(:type, :top_places, :bottom_places, :side_bottom_places, :side_top_places, :seating_places ,:train_id)
+    params.require(:carriage).permit(:type, :top_places, :bottom_places, :side_bottom_places, :side_top_places, :seating_places, :train_id)
   end
 end

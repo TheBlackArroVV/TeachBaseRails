@@ -5,11 +5,11 @@ require_relative 'application'
 Rails.application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-    :user_name => 'TheBlackArroW',
-    :password => 'Veryhardpassword123',
-    :domain => 'morning-plains-21914.herokuapp.com',
-    :address => 'smtp.sendgrid.net',
-    :port => 587,
-    :authentication => :plain,
-    :enable_starttls_auto => true
+  user_name: 'TheBlackArroW',
+  password: 'Veryhardpassword123',
+  domain: 'morning-plains-21914.herokuapp.com',
+  address: 'smtp.sendgrid.net',
+  port: 587,
+  authentication: :plain,
+  enable_starttls_auto: true
 }

@@ -1,5 +1,5 @@
 class Carriage < ApplicationRecord
-  TYPES = ['CoupeCarriage', 'EconomyCarriage', 'SeatingCarriage', 'SVCarriage']
+  TYPES = %w[CoupeCarriage EconomyCarriage SeatingCarriage SVCarriage].freeze
 
   belongs_to :train
 
@@ -10,7 +10,7 @@ class Carriage < ApplicationRecord
   protected
 
   def place_a_number
-    self.number ||= self.last_number + 1
+    self.number ||= last_number + 1
   end
 
   def last_number

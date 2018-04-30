@@ -1,19 +1,17 @@
 class Admin::RailwayStationsController < Admin::BaseController
-  before_action :set_railway_station, only: [:show, :edit, :update, :destroy, :update_position]
+  before_action :set_railway_station, only: %i[show edit update destroy update_position]
 
   def index
     @railway_stations = RailwayStation.all
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @railway_station = RailwayStation.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @railway_station = RailwayStation.new(railway_station_params)

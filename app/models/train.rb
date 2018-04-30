@@ -7,6 +7,6 @@ class Train < ApplicationRecord
   validates :number, presence: true
 
   def number_of_places(type_of_carriage, type_of_places)
-    self.carriages.where(type: type_of_carriage).pluck("#{type_of_places}".to_sym).sum
+    carriages.where(type: type_of_carriage).pluck(type_of_places.to_s.to_sym).sum
   end
 end
