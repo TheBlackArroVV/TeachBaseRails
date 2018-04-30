@@ -2,12 +2,12 @@
 
   <div class="col-sm-3">
 
-    <h1>Find a ticket</h1>
+    <h1><%= t('search.find_ticket') %></h1>
 
     <%= form_tag search_path do %>
       <%= collection_select :search, :arrival_station, RailwayStation.all, :name, :name, {}, { class: 'form-control form-control-sm' } %><br/>
       <%= collection_select :search, :departure_station, RailwayStation.all, :name, :name, {}, { class: 'form-control form-control-sm' } %><br/>
-      <%= submit_tag 'Find', class: 'btn btn-success' %>
+      <%= submit_tag t('search.find'), class: 'btn btn-success' %>
     <% end %>
 
   </div>
@@ -15,11 +15,13 @@
 </div>
 
 <% if @trains %>
-  <h1>Available trains:</h1><br/>
+  <h1><%= t('search.available_trains') %>:</h1><br/>
   <% @trains.each do |train| %>
-    <strong>Train number: </strong><%= train.number %><br/>
-    <strong>Departure: </strong><%= train.route.railway_stations_routes.first.departure_time %><br/>
-    <strong>Arrival: </strong><%= train.route.railway_stations_routes.last.arrival_time %><br/>
+    <strong><%= t('train.number') %>: </strong><%= train.number %><br/>
+    <strong><%= t('railway_stations_routes.departure') %>: </strong><%= train.route.railway_stations_routes.first.departure_time %><br/>
+    <strong><%= t('railway_stations_routes.arrival') %>: </strong><%= train.route.railway_stations_routes.last.arrival_time %><br/>
     <%= link_to '', new_ticket_path(id: train.id), class: 'glyphicon glyphicon-shopping-cart' %><br/>
   <% end %>
+  <% else %>
+  <h2><%= t('search.no_trains') %></h2>
 <% end %>

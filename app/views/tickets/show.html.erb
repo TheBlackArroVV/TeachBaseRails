@@ -1,5 +1,5 @@
-<strong>Ticket in train number: </strong><%= @ticket.train.number %><br/>
-<strong>Buyed by user: </strong><%= @ticket.user.name %><br/>
-<strong>For: </strong><%= @ticket.passport_data %><br/>
-<strong>With initials: </strong><%= @ticket.initials %><br/>
-<%= link_to 'Delete a ticket', ticket_path(@ticket), method: :delete, class: 'btn btn-danger' if current_user == @ticket.user %>
+<strong><%= t('ticket.train_number') %>: </strong><%= @ticket.train.number %><br/>
+<strong><%= t('ticket.buyed') %>: </strong><%= @ticket.user.name %><br/>
+<strong><%= t('ticket.for') %>: </strong><%= @ticket.passport_data %><br/>
+<strong><%= t('ticket.initials') %>: </strong><%= @ticket.initials %><br/>
+<%= link_to t('ticket.delete'), ticket_path(@ticket), method: :delete, class: 'btn btn-danger' if current_user == @ticket.user %>
