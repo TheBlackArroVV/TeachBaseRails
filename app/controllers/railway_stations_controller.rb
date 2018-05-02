@@ -9,8 +9,7 @@ class RailwayStationsController < ApplicationController
 
   # GET /railway_stations/1
   # GET /railway_stations/1.json
-  def show
-  end
+  def show; end
 
   # GET /railway_stations/new
   def new
@@ -18,8 +17,7 @@ class RailwayStationsController < ApplicationController
   end
 
   # GET /railway_stations/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /railway_stations
   # POST /railway_stations.json
