@@ -1,5 +1,5 @@
 class RoutesController < ApplicationController
-  before_action :set_route, only: [:edit, :update, :destroy, :show]
+  before_action :set_route, only: %i[edit update destroy show]
 
   def index
     @routes = Route.all
@@ -19,8 +19,7 @@ class RoutesController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     @route.update(route_params)
@@ -32,8 +31,7 @@ class RoutesController < ApplicationController
     redirect_to routes_path
   end
 
-  def show
-  end
+  def show; end
 
   private
 
