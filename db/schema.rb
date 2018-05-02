@@ -39,8 +39,8 @@ ActiveRecord::Schema.define(version: 20180418083838) do
     t.integer "position"
     t.datetime "departure_time"
     t.datetime "arrival_time"
+    t.index ["railway_station_id"], name: "index_railway_stations_routes_on_railway_station_id"
     t.index ["route_id"], name: "index_railway_stations_routes_on_route_id"
-    t.index [nil], name: "index_railway_stations_routes_on_railwaystation_id"
   end
 
   create_table 'routes', force: :cascade do |t|

@@ -15,29 +15,28 @@
   <% when "CoupeCarriage" %>
   <p>
     <strong>Bottom Places in carriage:</strong>
-    <% @carriage.bottom_places %><br/>
+    <%= @carriage.bottom_places %><br/>
     <strong>Top Places in carriage:</strong>
-    <% @carriage.top_places %>  <br/>
+    <%= @carriage.top_places %>  <br/>
   </p>
 
   <% when "EconomyCarriage" %>
   <p>
     <strong>Bottom Places in carriage:</strong>
-    <% @carriage.bottom_places %><br/>
+    <%= @carriage.bottom_places %><br/>
     <strong>Top Places in carriage:</strong>
-    <% @carriage.top_places %><br/>
+    <%= @carriage.top_places %><br/>
     <strong>Side Bottom Places in carriage:</strong>
-    <% @carriage.side_bottom_places %><br/>
+    <%= @carriage.side_bottom_places %><br/>
     <strong>Side Top Places in carriage:</strong>
-    <% @carriage.side_top_places %><br/>
+    <%= @carriage.side_top_places %><br/>
   </p>
 
   <% when "SvCarriage" %>
   <p>
     <strong>Bottom Places in carriage:</strong>
-    <% @carriage.bottom_places %><br/>
+    <%= @carriage.bottom_places %><br/>
   </p>
 <% end %>
 
-<%= link_to 'Edit', edit_admin_carriage_path(@carriage) %> |
-<%= link_to 'Back', admin_carriages_path %>
+<%= link_to 'Back', admin_train_carriages_path(@carriage.train), class: 'btn btn-secondary' %>

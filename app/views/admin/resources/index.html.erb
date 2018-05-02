@@ -1,9 +1,15 @@
 <h1><%= t('common.resources') %>:</h1>
-<strong><%= t('common.routes') %>: </strong>
-<%= link_to t('common.routes'), admin_routes_path %><br/>
-<strong><%= t('common.trains') %>: </strong>
-<%= link_to t('common.trains'), admin_trains_path %><br/>
-<strong><%= t('common.stations') %>: </strong>
-<%= link_to t('common.stations'), admin_railway_stations_path %><br/>
-<strong><%= t('common.tickets') %>: </strong>
-<%= link_to t('common.tickets'), admin_tickets_path %>
+<table>
+  <tr>
+    <th><strong><%= t('common.routes') %>: </strong></th><br>
+    <th><strong><%= t('common.trains') %>: </strong></th><br>
+    <th><strong><%= t('common.stations') %>: </strong></th><br>
+    <th><strong><%= t('common.tickets') %>: </strong></th><br>
+  </tr>
+  <tr>
+    <th><%= link_to t('common.routes'), admin_routes_path, class: 'btn btn-info' %><br/></th>
+    <th><%= link_to t('common.trains'), admin_trains_path, class: 'btn btn-info' %><br/></th>
+    <th><%= link_to t('common.stations'), admin_railway_stations_path, class: 'btn btn-info' %><br/></th>
+    <th><%= link_to t('common.tickets'), admin_tickets_path, class: 'btn btn-info' %></th>
+  </tr>
+</table>

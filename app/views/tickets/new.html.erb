@@ -1,25 +1,28 @@
-<h1>Tickets:</h1>
-<%= form_for @ticket, url: tickets_path(id: @train.id) do |f| %>
-  <% if @ticket.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@ticket.errors.count, "error") %> prohibited this railway_station from being saved:</h2>
-      <ul>
-        <% @ticket.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<h1><%= t('tickets.title') %>:</h1>
 
-  <div class="container">
-    <%= f.label :initials %>
-    <%= f.text_field :initials %>
+<div class="row">
+  <div class="col-sm-3">
+
+    <%= form_for @ticket, url: tickets_path(id: @train.id) do |f| %>
+      <% if @ticket.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@ticket.errors.count, "error") %> prohibited this railway_station from being saved:</h2>
+          <ul>
+            <% @ticket.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <%= f.label :initials, t('tickets.initials') %>
+      <%= f.text_field :initials, class: 'form-control' %>
+
+      <%= f.label :passport_data, t('tickets.passport_data') %>
+      <%= f.text_field :passport_data, class: 'form-control' %><br/>
+
+      <%= f.submit t('tickets.buy'), class: 'btn btn-default' %>
+    <% end %>
+
   </div>
-
-  <div class="container">
-    <%= f.label :passport_data %>
-    <%= f.text_field :passport_data %>
-  </div>
-
-  <%= f.submit 'Buy' %>
-<% end %>
+</div>

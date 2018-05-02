@@ -1,4 +1,26 @@
 ru:
+  tickets:
+    title: 'Билеты'
+    initials: 'Инициалы'
+    passport_data: 'Паспортные данные'
+    buy: 'Купить'
+  ticket:
+    delete: 'Удалить билет'
+    train_number: 'Билет в поезде номер'
+    buyed: 'Куплен пользователем'
+    for: 'Для'
+    initials: 'З инициалами'
+    title: 'Посмотреть билет'
+  railway_stations_routes:
+    departure: 'Отправление'
+    arrival: 'Прибытие'
+  train:
+    number: 'Номер поезда'
+  search:
+    available_trains: 'Доступные поезда'
+    find: 'Найти'
+    find_ticket: 'Найти билет'
+    no_trains: 'Извините, но подходящих поездов нет'
   admin:
     routes:
       new:
@@ -20,6 +42,7 @@ ru:
       new:
         initials: 'Инициалы'
   common:
+    app_name: 'Приложение для поездов'
     back: 'Назад'
     exit: 'Выход'
     admin: 'Админпанель'

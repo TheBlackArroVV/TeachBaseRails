@@ -1,4 +1,6 @@
 class Carriage < ApplicationRecord
+  TYPES = %w[CoupeCarriage EconomyCarriage SeatingCarriage SVCarriage].freeze
+
   belongs_to :train
 
   validates :number, uniqueness: { scope: :train_id }
@@ -8,7 +10,7 @@ class Carriage < ApplicationRecord
   protected
 
   def place_a_number
-    self.number ||= self.last_number + 1
+    self.number ||= last_number + 1
   end
 
   def last_number

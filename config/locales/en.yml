@@ -30,4 +30,28 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  tickets:
+    title: 'Tickets'
+    initials: 'Initials'
+    passport_data: 'Passport data'
+    buy: 'Buy'
+  ticket:
+    delete: 'Delete a ticket'
+    train_number: 'Ticket in train number'
+    buyed: 'Buyed by user'
+    for: 'For'
+    initials: 'With initials'
+    title: 'Watch a ticket'
+  railway_stations_routes:
+    departure: 'Departure'
+    arrival: 'Arriaval'
+  train:
+    number: 'Train number'
+  search:
+    available_trains: 'Available Trains'
+    find_ticket: 'Find a ticket'
+    find: 'Find'
+    no_trains: 'Sorry, but there no trains for you'
+  common:
+    app_name: 'TrainsApp'
   hello: "Hello world"

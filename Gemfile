@@ -34,9 +34,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 
 # interface customisation
-gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
 gem 'therubyracer'
+gem 'twitter-bootstrap-rails'
+
+# mailer gem
+gem 'sendgrid-ruby'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

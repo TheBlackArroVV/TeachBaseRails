@@ -1,7 +1,7 @@
 class TicketsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_train, only: [:new, :create]
-  before_action :set_ticket, only: [:show, :destroy]
+  before_action :set_train, only: %i[new create]
+  before_action :set_ticket, only: %i[show destroy]
 
   def index
     @tickets = Ticket.where(user: current_user)
@@ -25,12 +25,11 @@ class TicketsController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
   def destroy
     @ticket.destroy
-    render 'index'
+    redirect_to tickets_path
   end
 
   private
