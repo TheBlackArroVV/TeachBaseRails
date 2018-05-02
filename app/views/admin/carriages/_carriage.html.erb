@@ -1,0 +1,8 @@
+<tr>
+  <td><%= carriage.id %></td>
+  <td><%= carriage.type %></td>
+  <td><%= carriage.train.number %></td>
+  <td><%= link_to 'Show', admin_carriage_path(carriage.id) %></td>
+  <td><%= link_to 'Edit', edit_admin_carriage_path(carriage) %></td>
+  <td><%= link_to 'Destroy', admin_carriage_path(carriage.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
