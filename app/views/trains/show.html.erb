@@ -10,14 +10,15 @@
   <% end %>
 </p>
 
-<p>
-  Количество вагонов купе: <%= @compartment_carriages.count %><br/>
-  Верхних мест в вагонах: <%= @compartment_carriages.sum(:top_places) %><br/>
-  Нижних мест в вагонах: <%= @compartment_carriages.sum(:bottom_places) %><br/>
-  Количество вагонов плацкарт: <%= @reserved_seat_carriages.count %><br/>
-  Верхних мест в вагонах: <%= @reserved_seat_carriages.sum(:top_places) %><br/>
-  Нижних мест в вагонах: <%= @reserved_seat_carriages.sum(:bottom_places) %><br/>
-</p>
+<% if @train.from_head %>
+  <% @train.carriages.each do |carriage| %>
+    <%= link_to carriage.number, carriage_path  %><br/>
+  <% end %>
+<% else %>
+  <% @train.carriages.reverse.each do |carriage| %>
+    <%= link_to carriage.number, carriage_path %><br/>
+  <% end %>
+<% end %>
 
 <%= link_to 'Edit', edit_train_path(@train) %> |
 <%= link_to 'Back', trains_path %>

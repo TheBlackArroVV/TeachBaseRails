@@ -10,15 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180413135648) do
+ActiveRecord::Schema.define(version: 20180416085148) do
 
   create_table "carriages", force: :cascade do |t|
-    t.string "type_of_carriage"
+    t.string "type"
     t.integer "top_places"
     t.integer "bottom_places"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "train_id"
+    t.integer "side_top_places"
+    t.integer "side_bottom_places"
+    t.integer "seating_places"
+    t.integer "number"
     t.index ["train_id"], name: "index_carriages_on_train_id"
   end
 
@@ -48,14 +52,15 @@ ActiveRecord::Schema.define(version: 20180413135648) do
     t.datetime 'updated_at', null: false
   end
 
-  create_table 'trains', force: :cascade do |t|
-    t.string 'number'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.integer 'route_id'
-    t.integer 'current_station_id'
-    t.index ['current_station_id'], name: 'index_trains_on_current_station_id'
-    t.index ['route_id'], name: 'index_trains_on_route_id'
+  create_table "trains", force: :cascade do |t|
+    t.string "number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "route_id"
+    t.integer "current_station_id"
+    t.boolean "from_head", default: true
+    t.index ["current_station_id"], name: "index_trains_on_current_station_id"
+    t.index ["route_id"], name: "index_trains_on_route_id"
   end
 
   create_table 'users', force: :cascade do |t|
