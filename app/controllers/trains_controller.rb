@@ -9,7 +9,10 @@ class TrainsController < ApplicationController
 
   # GET /trains/1
   # GET /trains/1.json
-  def show; end
+  def show
+    @compartment_carriages = Carriage.where(train: @train, type_of_carriage: "Купе")
+    @reserved_seat_carriages = Carriage.where(train: @train, type_of_carriage: "Плацкарт")
+  end
 
   # GET /trains/new
   def new

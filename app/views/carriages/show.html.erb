@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @carriage.id %><br/>
+</p>
+
+<p>
+  <strong>Top Places</strong>
+  <%= @carriage.top_places %>
+</p>
+
+<p>
+  <strong>Bottom places:</strong>
+  <%= @carriage.bottom_places %><br/>
+</p>
+
+<p>
+  <strong>Type of carriage:</strong>
+  <%= @carriage.type_of_carriage %><br/>
+</p>
+
+<p>
+  <strong>Train number:</strong>
+  <%= @carriage.train.number %><br/>
+</p>
+
+<%= link_to 'Edit', edit_carriage_path(@carriage) %> |
+<%= link_to 'Back', carriages_path %>
